@@ -1,0 +1,30 @@
+{
+  "name": "robot_controller.js",
+  "version": "1.0.0",
+  "description": "Node.js server to control a robot with 6 pods by iPad",
+  "main": "controller.js",
+  "dependencies": {
+    "express": "^4.11.1",
+    "repeat": "^0.0.6",
+    "socket.io": "^1.2.1",
+    "serialport": "^1.4.10",
+    "sudo": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notherno/robot_controller.js.git"
+  },
+  "keywords": [
+    "Node.js"
+  ],
+  "author": "Notherno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notherno/robot_controller.js/issues"
+  },
+  "homepage": "https://github.com/notherno/robot_controller.js"
+}
