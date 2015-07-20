@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, minimal-ui"/>
+<link rel="stylesheet" href="style.css">
+
+<title>Robot Controller</title>
+<script src="/js/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/ctrl.js"></script>
+</head>
+
+<body>
+  <div id="blind"></div>
+  <div id="image">
+  <img id="streaming-img" src="http://192.168.2.2:9000/?action=stream" width="640" height="480" />
+  </div>
+  <div id="container">
+    <input type="text" id="message">
+    <input type="button" id="message-send" value="SEND">
+    <input type="button" id="power" value="POWER">
+    <input type="button" id="sound" value="♪">
+    <input type="button" id="test-voice" value="TEST">
+    <input type="button" id="introduction" value="INTRO">
+    <table id="input-field">
+      <tr><td>前後</td><td><input type="number" id="swing" value="50"></td></tr>
+      <tr><td>上昇</td><td><input type="number" id="raise" value="40"></td></tr>
+    </table>
+    <input type="button" id="setangle" value="SET">
+    <input type="range" min="0" max="5" class="vertical" id="speed">
+    <input type="button" class="arrow" id ="up">
+    <input type="button" class="arrow" id ="right">
+    <input type="button" class="arrow" id ="down">
+    <input type="button" class="arrow" id ="left">
+  </div>
+</body>
+</html>
